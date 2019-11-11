@@ -1,0 +1,433 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+  .orange {
+    color: #f58612;
+  }
+  header {
+    background-color: #6890c1;
+    color: #fff;
+    padding: 27px 20px;
+  }
+  .mobileHead,
+  .mobileImg,
+  .mobileRight,
+  .mobileFooter {
+    display: none;
+  }
+  nav {
+    background-color: #fff;
+    color: #6890c1;
+    padding: 17px;
+    text-align: right;
+  }
+  nav .navUl span {
+    margin: 0 20px;
+    cursor: pointer;
+  }
+  nav .navUl .navBtn {
+    background-color: #6890c1;
+    color: #fff;
+    border-radius: 5px;
+    padding: 3px 15px;
+  }
+  nav .navUl .navBtn a {
+    color: #fff;
+  }
+  nav .navUl .dropDown {
+    position: relative;
+    display: inline-block;
+  }
+  nav .navUl .dropDown .dropList {
+    position: absolute;
+    box-shadow: 0 0 7px 0.6px #ccc;
+    opacity: 0;
+    transition: all 300ms;
+    top: 70px;
+    width: 400%;
+    z-index: 12;
+    text-align: left;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  nav .navUl .dropDown .dropList li {
+    list-style: none;
+    padding: 20px;
+  }
+  nav .navUl .dropDown:hover .dropList {
+    opacity: 1;
+    top: 35px;
+  }
+  .banner {
+    background-image: url('IMG_3082.JPG');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 640px;
+    transition: all 300ms;
+  }
+  .banner:hover{
+    background-size: 120%;
+  }
+  .banner .mask {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+  }
+  .banner .mask .bannerTitle {
+    font-weight: bolder;
+    font-size: 4.2rem;
+    margin: 0 20%;
+    padding-top: 160px;
+    letter-spacing: 2px;
+  }
+  .banner .mask .bannerTxt {
+    padding: 100px 200px;
+  }
+  .banner .mask .bannerTxt .btnLeft,
+  .banner .mask .bannerTxt .btnRight {
+    display: inline-block;
+    padding: 0 24px;
+    height: 75px;
+    letter-spacing: 1.3px;
+    line-height: 75px;
+    border-radius: 37.5px;
+    background-color: #f58612;
+    transition: all 300ms;
+  }
+  .banner .mask .bannerTxt .btnLeft span,
+  .banner .mask .bannerTxt .btnRight span {
+    display: none;
+  }
+  .banner .mask .bannerTxt .btnRight {
+    background-color: #6890c1;
+    float: right;
+  }
+  .banner .mask .bannerTxt .btnLeft:hover span,
+  .banner .mask .bannerTxt .btnRight:hover span {
+    display: inline-block;
+  }
+  .banner .mask .bannerTxt .btnLeft:hover,
+  .banner .mask .bannerTxt .btnRight:hover {
+    background-color: #777 !important;
+  }
+  .content {
+    white-space: nowrap;
+  }
+  .content .cLeft,
+  .content .cRight {
+    display: inline-block;
+  }
+  .content .cLeft {
+    width: 75%;
+  }
+  .content .cLeft .leftTop {
+    background-color: #6890c1;
+    padding: 25px 20px 65px;
+    color: #fff;
+  }
+  .content .cLeft .leftTop .title {
+    margin: 10px 0 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .content .cLeft .leftTop .iconItem {
+    display: inline-block;
+    white-space: nowrap;
+    width: 20%;
+    margin-right: 4%;
+    text-align: center;
+  }
+  .content .cLeft .leftTop .iconItem:hover img{
+    transform: scale(1.2);
+  }
+  .content .cLeft .leftTop .iconItem img {
+    width: 60%;
+    transition: all 300ms;
+  }
+  .content .cLeft .leftTop .iconItem .iconTitle {
+    font-weight: 600;
+    font-size: 17px;
+    margin: 20px 0;
+  }
+  .content .cLeft .leftBottom {
+    padding: 25px 60px;
+  }
+  .content .cLeft .leftBottom .title {
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .content .cLeft .leftBottom img {
+    width: 10%;
+  }
+  .content .cLeft .leftBottom p span {
+    display: inline-block;
+    width: 90%;
+    font-size: 18px;
+    white-space: normal;
+  }
+  .content .cRight {
+    width: 25.76%;
+    background-color: #f58612;
+    margin-left: -1%;
+    height: 100%;
+    padding: 20px 30px 80px;
+    vertical-align: top;
+    color: #fff;
+  }
+  .content .cRight .title {
+    margin-bottom: 90px;
+    margin-left: -30px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+  .content .cRight .rightItm img {
+    width: 18%;
+    margin-right: 4%;
+    transition: all 300ms;
+  }
+  .content .cRight .rightItm:hover img{
+    transform: scale(1.2);
+  }
+  .content .cRight .rightItm .itemTxt {
+    display: inline-block;
+    width: 75%;
+    font-size: 22px;
+    font-weight: 600;
+    vertical-align: top;
+    margin-top: 3%;
+  }
+  .content .cRight .line {
+    width: 4px;
+    height: 40px;
+    background-color: #fff;
+    margin-left: 34%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .bottomLine {
+    padding: 20px 20px;
+    font-weight: 600;
+    font-size: 2.4rem;
+    background-color: #3e3f43;
+    color: #fff;
+  }
+  .bottomLine .btn {
+    float: right;
+    background-color: #f58612;
+    padding: 6px 60px;
+    border-radius: 25px;
+    font-weight: 500;
+  }
+  .bottomLine .btn:hover{
+    background-color: #777;
+  }
+  footer {
+    white-space: nowrap;
+  }
+  footer .item1,
+  footer .item2 {
+    width: 33.17%;
+    padding: 18px 25px;
+    display: inline-block;
+  }
+  footer .item1 .title,
+  footer .item2 .title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  footer .item1 {
+    vertical-align: top;
+    background-color: #6890c1;
+    color: #fff;
+    padding-bottom: 40px;
+  }
+  footer .item1 .fContent {
+    margin-left: 10%;
+  }
+  footer .item1 .fContent div {
+    margin: 18px;
+  }
+  footer .item2 .title {
+    text-align: center;
+  }
+  footer .item2 .fContent {
+    white-space: normal;
+    line-height: 25px;
+  }
+  
+  
+  
+  
+  /* responsive */
+  @media screen and (max-width: 415px) {
+    header,
+    .navBtn,
+    .content .cLeft .leftBottom,
+    .content .cRight,
+    footer {
+      display: none;
+    }
+    .mobileHead,
+    .mobileImg,
+    .mobileRight,
+    .mobileFooter {
+      display: block;
+    }
+    .carousel-inner .item img {
+      width: 100%;
+      height: 180px;
+    }
+    .mobileHead {
+      width: 100%;
+      background-color: #6890c1;
+      padding: 20px 0;
+    }
+    .mobileHead .menu {
+      background-color: #fff;
+      padding: 10px;
+      display: inline-block;
+      border-radius: 5px;
+      margin-left: 20px;
+    }
+    .mobileHead .menu div {
+      background-color: #999;
+      height: 1.5px;
+      width: 25px;
+      margin-bottom: 8px;
+    }
+    .mobileHead .mSign {
+      color: #fff;
+      float: right;
+      margin-right: 20px;
+      line-height: 47px;
+    }
+    .mobileHead .mSign a {
+      color: #fff;
+    }
+    nav .navUl {
+      float: none;
+    }
+    nav .navUl span {
+      margin: 0 30px;
+      font-weight: 600;
+    }
+    .mobileImg {
+      width: 100%;
+      margin-bottom: -10px;
+    }
+    .banner {
+      height: 260px;
+    }
+    .banner .mask .bannerTitle {
+      font-size: 1.8rem;
+      padding-top: 50px;
+      margin: 0 4% 0 20%;
+    }
+    .banner .mask .bannerTxt {
+      padding: 0;
+      margin-top: 40px;
+    }
+    .banner .mask .bannerTxt .btnLeft,
+    .banner .mask .bannerTxt .btnRight {
+      padding: 0 5px;
+      font-size: 10px;
+      height: 40px;
+      letter-spacing: 0.2px;
+      line-height: 40px;
+    }
+    .content .cLeft {
+      width: 100%;
+    }
+    .content .cLeft .leftTop {
+      padding-bottom: 25px;
+    }
+    .content .cLeft .leftTop .title {
+      font-size: 1.2rem;
+    }
+    .content .cLeft .leftTop .iconItem {
+      white-space: normal;
+      vertical-align: top;
+    }
+    .content .cLeft .leftTop .iconItem .iconTitle {
+      font-size: 12px;
+    }
+    .content .cLeft .leftTop .iconItem .icontxt {
+      font-size: 9px;
+    }
+    .bottomLine {
+      font-size: 1rem;
+    }
+    .bottomLine .btn {
+      float: none;
+      display: inline-block;
+      padding: 6px 60px;
+      margin-top: 10px;
+      margin-left: 25%;
+    }
+    .mobileRight {
+      padding: 10px;
+      color: #fff;
+      background-color: #f58612;
+    }
+    .mobileRight .title {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    .mobileRight .mobileItem {
+      width: 15%;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .mobileRight .mobileItem img {
+      width: 90%;
+    }
+    .mobileRight .mobileItem .itemTxt {
+      width: 120%;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .mobileRight .line {
+      display: inline-block;
+      width: 10%;
+      height: 3px;
+      background-color: #fff;
+    }
+    .mobileRight .otherLine {
+      width: 19%;
+      position: absolute;
+      right: 10px;
+      transform: rotate(-45deg);
+    }
+    .mobileFooter {
+      color: #fff;
+      padding: 9px;
+      background-color: #3e3f43;
+    }
+    .mobileFooter .title {
+      width: 35%;
+      font-weight: 600;
+      font-size: 1.4rem;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 25px;
+    }
+    .mobileFooter .rightFooter {
+      font-size: 12px;
+      margin-left: 4%;
+      width: 50%;
+      display: inline-block;
+    }
+    .mobileFooter .rightFooter div {
+      margin: 8px;
+    }
+  }
+  
